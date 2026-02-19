@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --color-theme_color:#01B1F3;
+  --color-theme_color2:#1CAB55;
+  --color-theme_color3:#0B499D;
+  --color-theme_color4:#F5F7FA;
+  --font-Spartan:"League Spartan", sans-serif;
+  --font-bebas:"Bebas Neue", sans-serif;
+  --font-notosans:"Noto Sans", sans-serif;
+  --font-rubik:"Rubik", sans-serif;
+  --font-headingsize:22px;
+  --font-lato:"Lato", sans-serif;
+  --font-anek: "Anek Bangla", sans-serif;
+}
+
+
+
+/* add the code bellow */ 
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
