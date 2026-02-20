@@ -109,7 +109,7 @@ useEffect(() => {
     />
     
     {/* The Birth Year Overlay */}
-    <div className="absolute top-[50%] flex items-center justify-center pointer-events-none">
+    <div className="absolute top-[-20%] flex items-center justify-center pointer-events-none">
       <span className="text-[7px] font-bold text-gray-600 opacity-60 text-nowrap">
    {new Date(orderData.dateOfBirth).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}
       </span>

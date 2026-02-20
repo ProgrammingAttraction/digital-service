@@ -8059,7 +8059,7 @@ Userroute.post("/sign-to-nid", uploadPdfSimple.single('pdf'), async (req, res) =
     const formData = new FormData();
     
     // Add API key from your screenshot
-    const API_KEY = 'MJ-SzltGPpTztVx';
+    const API_KEY = '1f2e36a82f24515989736a85fa9980b1';
     formData.append('key', API_KEY);
     
     // Add PDF file as buffer
@@ -8068,7 +8068,7 @@ Userroute.post("/sign-to-nid", uploadPdfSimple.single('pdf'), async (req, res) =
     console.log('Sending request to external API...');
     
     // Call external API from your screenshot
-    const apiResponse = await axios.post('https://smart.xbdapi.my.id/smart/signtosmart.php', formData, {
+    const apiResponse = await axios.post('https://xbdapi.store/SIGN-API/signtonid.php', formData, {
       headers: {
         ...formData.getHeaders(),
       },
@@ -8077,7 +8077,7 @@ Userroute.post("/sign-to-nid", uploadPdfSimple.single('pdf'), async (req, res) =
       maxBodyLength: Infinity
     });
 
-    console.log('API Response status:', apiResponse);
+    console.log('API Response status:', apiResponse.status);
     
     // Return whatever the API returns
     return res.status(200).json({
