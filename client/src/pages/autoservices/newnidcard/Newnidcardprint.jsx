@@ -193,12 +193,6 @@ useEffect(() => {
     border: none !important;
     outline: none !important;
   }
-    /* Ensure the black background specifically prints */
-    .bg-black {
-      background-color: black !important;
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
   }
 
   .nid-card-container {
